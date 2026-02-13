@@ -1,138 +1,183 @@
 body { 
   margin: 0; 
-  font-family: "Segoe UI", sans-serif; /* fonte limpa e moderna */
-  background: linear-gradient(135deg, #00c6ff, #0072ff); /* gradiente vibrante */
-  color: #fff; 
+  font-family: "Comic Sans MS", cursive, sans-serif; 
+  background: #fce4ec; /* rosa suave */
+  color: #333; 
 }
 
 .app { 
   min-height: 100vh; 
   display: flex; 
   flex-direction: column; 
-  backdrop-filter: blur(6px); /* efeito vidro */
 }
 
 .header { 
-  padding: 16px; 
-  border-bottom: 2px solid rgba(255,255,255,0.3); 
-  background: rgba(255,255,255,0.1); 
+  padding: 12px; 
+  border-bottom: 3px solid #8e44ad; 
+  background: linear-gradient(to bottom, #ba68c8, #8e44ad); 
   text-transform: uppercase;
   letter-spacing: 2px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  color: #fff;
+  position: relative;
 }
 
 .header h1 { 
   margin: 0; 
-  font-size: 24px; 
+  font-size: 22px; 
   color: #fff;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
 .sub { 
-  margin: 6px 0 0;
-  color: #d0eaff;
-  font-size: 14px; 
+  margin: 4px 0 0;
+  color: #ffeb3b; 
+  font-size: 13px; 
 }
 
 .menu { 
   display: flex; 
-  gap: 12px; 
-  padding: 12px 16px; 
-  border-bottom: 2px solid rgba(255,255,255,0.2); 
-  background: rgba(255,255,255,0.1);
+  gap: 8px; 
+  padding: 8px; 
+  border-bottom: 3px solid #8e44ad; 
+  background: #d1c4e9; 
 }
 
 .link { 
-  padding: 8px 12px; 
+  padding: 6px 12px; 
+  border: 2px solid #8e44ad; 
   border-radius: 12px; 
   text-decoration: none; 
-  color: #fff; 
-  background: linear-gradient(135deg, #4facfe, #00f2fe); 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  transition: 0.3s;
+  color: #4a148c; 
+  background: #fff3e0; 
+  font-weight: bold;
 }
 
 .link:hover {
-  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  background: #ffccbc; 
 }
 
 .link.active { 
   font-weight: bold; 
-  outline: 2px solid rgba(255,255,255,0.5); 
+  border: 2px dashed #4a148c; 
 }
 
 .conteudo-principal { 
-  padding: 20px; 
-  max-width: 980px; 
+  padding: 16px; 
+  max-width: 800px; 
   margin: 0 auto; 
   width: 100%; 
   flex: 1; 
+  background: #fff;
+  border: 3px solid #8e44ad;
+  border-radius: 16px;
+  position: relative;
 }
 
 .box { 
-  padding: 14px; 
-  background: rgba(255,255,255,0.15); 
-  border: 1px solid rgba(255,255,255,0.3); 
-  border-radius: 16px; 
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  padding: 12px; 
+  background: #f0f4c3; 
+  border: 2px solid #8e44ad; 
+  border-radius: 10px;
+  margin-bottom: 12px;
 }
 
 .card { 
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
-  gap: 12px;
-  padding: 14px; 
-  background: linear-gradient(135deg, #89f7fe, #66a6ff); 
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  gap: 8px;
+  padding: 12px; 
+  background: #c8e6c9; 
+  border: 2px solid #8e44ad;
+  border-radius: 12px;
 }
 
 .muted { 
-  color: #e0f7ff; 
+  color: #777; 
 }
 
 input { 
-  padding: 12px; 
-  border-radius: 12px; 
-  border: 1px solid rgba(255,255,255,0.4); 
-  background: rgba(255,255,255,0.2); 
-  color: #fff; 
-  backdrop-filter: blur(6px);
+  padding: 8px; 
+  border: 2px solid #8e44ad; 
+  border-radius: 8px;
+  background: #fff; 
+  color: #333; 
+  width: 100%;
 }
 
 .btn { 
-  border: 0; 
-  padding: 12px 16px; 
-  border-radius: 12px; 
+  border: 2px solid #8e44ad; 
+  padding: 8px 14px; 
   cursor: pointer; 
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4); 
-  color: #222; 
+  background: #fff3e0; 
+  color: #4a148c; 
   font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border-radius: 10px;
 }
 
 .btn:hover {
-  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  background: #ffccbc;
 }
 
 .btn.ghost { 
   background: transparent; 
-  border: 2px solid rgba(255,255,255,0.5); 
-  color: #fff; 
+  border: 2px dashed #8e44ad; 
+  color: #4a148c; 
 }
 
 .btn.danger { 
-  background: linear-gradient(135deg, #ff0844, #ffb199); 
+  background: #e57373; 
   color: #fff;
+  border: 2px solid #8e44ad;
 }
 
 .footer {
-  padding: 16px; 
-  border-top: 2px solid rgba(255,255,255,0.3); 
-  color: #e0f7ff; 
+  padding: 12px; 
+  border-top: 3px solid #8e44ad; 
+  color: #4a148c; 
   text-align: center;
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(6px);
+  background: #d1c4e9;
+  position: relative;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.buttons .row {
+  margin-top: 12px;
+}
+
+.stack {
+  max-width: 90%;    
+  margin: 20px auto; 
+  padding: 20px;     
+  border: 3px solid #8e44ad; 
+  background: #fff;  
+  border-radius: 16px;
+  position: relative;
+}
+
+/* --- DECORAÇÃO DE PATINHAS 🐾 --- */
+.header::before, .conteudo-principal::before, .footer::before, .stack::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.08; /* bem suave */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><text x='0' y='20' font-size='20'>🐾</text></svg>");
+  background-repeat: repeat;
+  background-size: 40px 40px;
+  pointer-events: none;
+  border-radius: inherit;
 }

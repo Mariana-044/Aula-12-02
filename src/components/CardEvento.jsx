@@ -1,21 +1,15 @@
 import React from "react";
-import '../styles.css';
 
-
-function CardEvento({ titulo, descricao, data, local, onParticipar }) {
+export default function EventoCard({ evento }) {
   return (
-    <article className="card-evento">
-      <h2>{titulo}</h2>
-      <p>{descricao}</p>
-      <p>
-        <strong>Data:</strong> {data}
-      </p>
-      <p>
-        <strong>Local:</strong> {local}
-      </p>
-      <button onClick={onParticipar}>Participar</button>
-    </article>
+    <div className="card">
+      <div>
+        <h3>{evento.titulo}</h3>
+        <p><strong>Data:</strong> {evento.data}</p>
+        <p><strong>Local:</strong> {evento.local}</p>
+        {/* Aqui é a descrição */}
+        <p><strong>Descrição:</strong> {evento.descricao}</p>
+      </div>
+    </div>
   );
 }
-
-export default CardEvento;
